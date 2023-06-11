@@ -45,6 +45,7 @@ body {
 
     .score{
         background: linear-gradient($lightSlateBlue, $lightRoyalBlue);
+        border: 10px;
         border-radius: 50%;
         width: 12rem;
         height: 12rem;
@@ -53,6 +54,7 @@ body {
         .percentage{
          margin-block-end: 0;
          margin-block-start: 0;
+         color: hsl(246, 93%, 71%);
         }
         .hundred{
             display: block;
@@ -80,5 +82,70 @@ body {
     .percentile {
         padding: 0 3rem;
         padding-bottom: 3rem;
+    }
+}
+
+.summary{
+    padding: 0 1.25rem ;
+    background-color: $white;
+    p{
+        padding: 1rem 0;
+        font-size: 1.2rem;
+        color: $darkGrayBlue;
+        font-weight: 700;
+        margin-block-end: 0;
+        margin-block-start: 0;
+    }
+    .skill {
+        padding: 1rem;
+        display: flex;
+        align-content: space-between;
+        margin-bottom: 1rem;
+        border-radius: 10px;
+        border: 2px;
+        .competence {
+            padding-left: 0.75rem;
+        }
+        .metric{
+            margin-left: auto;
+            color: hsl(232, 8%, 61%);
+            font-weight: 700;
+            .number{
+                color: hsl(234, 13%, 28%);
+            }
+        }
+    }
+
+    .reaction{
+        background: hsla(0, 100%, 67%, 0.1);
+        color: $lightRed;
+    }
+
+    .memory{
+        color: $orangeyYellow;
+        background-color: hsla(39, 100%, 56%, 0.1);
+    }
+
+    .verbal {
+        color:$greenTeal;
+        background-color: hsla(166, 100%, 37%, 0.1);
+    }
+
+    .visual {
+        color: $cobaltBlue;
+        background-color: hsla(234, 85%, 45%, 0.1);
+    }
+    .continue {
+        margin-bottom: 1rem;
+        
+        .button{
+            padding: 1rem;
+            width: 100%;
+            background-color: $darkGrayBlue;
+            color: $white;
+            font-size: 1.2rem;
+            border-radius: 25px;
+            border: none;
+        }
     }
 }
